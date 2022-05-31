@@ -1,0 +1,40 @@
+﻿@page
+@model WebApplication2.Pages.zalogujModel
+@{
+    ViewData["Switch"] = false;
+}
+
+    <div class="container" style="margin-top: 30px;">
+        <form action="/zaloguj.html" method="get">
+            <div class="row justify-content-center">
+                <div class="col-7 text-center ">
+                    <h2 class="m-4">Login</h2>
+                    <input type="text" id="login" class="form-control" placeholder="Login">
+
+                    <h2 class="m-4">Hasło</h2>
+                    <input type="password" id="password" class="form-control" placeholder="Hało">
+                  <a class="fancy-button text-center " style="width:min-content;position: relative; left: 50%;transform: translateX(-50%);margin-top: 30px; text-decoration: none; color: black;" onclick="submit()">Zaloguj</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script>
+
+       function submit(){
+           var url = new URL(location.href)
+        $.get({
+              url: url.protocol +"//" + url.hostname + ":" + url.port + "/api/Users/LogIN",
+              type: "GET",
+              data: {"Username": document.getElementById('login').value, "password": document.getElementById('password').value},
+              success: function(response){
+                  console.log(response);
+                  window.location.href = '/index?token='+ response;
+              },
+              error: function(a){
+                  console.log("GAD")
+              }  
+          });
+       }
+    </script>
+ 

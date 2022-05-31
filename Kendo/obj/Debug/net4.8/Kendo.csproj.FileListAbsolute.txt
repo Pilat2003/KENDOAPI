@@ -1,0 +1,7 @@
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.csproj.AssemblyReference.cache
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.csproj.SuggestedBindingRedirects.cache
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.GeneratedMSBuildEditorConfig.editorconfig
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.AssemblyInfoInputs.cache
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.AssemblyInfo.cs
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.csproj.CoreCompileInputs.cache
+D:\API\aaa\Kendo\obj\Debug\net4.8\Kendo.exe.config

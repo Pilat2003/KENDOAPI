@@ -1,0 +1,114 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+:root {
+    --background: rgb(0, 113, 206);
+    --background-navbar: rgb(0, 83, 151);
+    --navbar-text-color: antiquewhite;
+    --fancy-color: rgb(0, 155, 182);
+    --fancy-color-hover: rgb(0, 93, 109);
+}
+
+body {
+    background-color: var(--background);
+}
+
+.navbar {
+    background-color: var(--background-navbar) !important;
+}
+
+.nav-item {
+    display: inline-block !important;
+}
+
+.fancy-button {
+    display: block;
+    font-size: 20px;
+    background-color: var(--fancy-color);
+    border: 20px solid var(--fancy-color);
+    border-radius: 1in;
+}
+
+    .fancy-button:hover {
+        background-color: var(--fancy-color-hover);
+        border: 20px solid var(--fancy-color-hover);
+        color: white;
+        transition: 400ms;
+    }
+
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-color {
+    color: var(--navbar-text-color) !important;
+}
